@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashish Adhikari | Researcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="hero">
+        <img src="profile.jpg" alt="Ashish Adhikari" class="profile-pic">
+        <h1>Dr. Ashish Adhikari</h1>
+        <p>Researcher in Plant Pathology, Epidemiology, and Data Science</p>
+        <div class="social-links">
+            <a href="https://github.com/ashishufl" target="_blank">GitHub</a>
+            <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank">Google Scholar</a>
+            <a href="https://www.linkedin.com/in/YOUR_LINKEDIN/" target="_blank">LinkedIn</a>
+            <a href="https://orcid.org/YOUR_ORCID" target="_blank">ORCID</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Last updated: <span id="last-updated"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById("last-updated").innerHTML = new Date(document.lastModified).toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    </script>
+
+</body>
+</html>
